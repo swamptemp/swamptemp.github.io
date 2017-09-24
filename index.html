@@ -1,0 +1,164 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <title>Fermentation Temperature</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/temp.png">
+
+    <meta name="theme-color" content="#3f51b5">
+    <!-- <meta name="theme-color" content="#009688"> -->
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Fermenter Temperature">
+    <link rel="apple-touch-icon-precomposed" href=images/temp.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/temp.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- Windows phone -->
+    <meta name="msapplication-navbutton-color" content="#3f51b5">
+
+    <link rel="shortcut icon" href="images/temp.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    .alignleft {
+      float:left;
+    }
+    .alignright {
+      float:right;
+    }
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    a {
+    text-decoration: none;
+    }
+    #view-source {
+      transition: 0.4s ease all;
+      -webkit-transition: 0.4s ease all;
+    }
+    #view-source:hover {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+    #link-button {
+      transition: 1.0s ease all;
+      -webkit-transition: 1.0s ease all;
+    }
+    #link-button:hover {
+      transform: scale(1.5) rotate(360deg);
+      -webkit-transform: scale(1.5) rotate(360deg);
+    }
+    box-shadow: -3px -3px 10px rgba(0, 0, 0, .25);
+    </style>
+
+  </head>
+
+  <body class="mdl-demo mdl-color-text--gray-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Fermenter Temperature</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+         <a href="#temperature" class="mdl-layout__tab">Temperature</a>
+         <a href="#humidity" class="mdl-layout__tab">Humidity</a>
+         <a href="#history" class="mdl-layout__tab">History</a>
+        </div>
+      </header>
+
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+              <script type="text/javascript" src="temperature.js"></script>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="temperature">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+            <section class="container">
+              <img src="images/history.png">
+            </section>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+            <section class="container">
+              <img src="images/full-history.png">
+            </section>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="humidity">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+            <section class="container">
+              <img src="images/humidity.png">
+            </section>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+            <section class="container">
+              <img src="images/full-humidity.png">
+            </section>
+            </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="history">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--8dp">
+            <div class="mdl-card__supporting-text mdl-color-text--grey-700">
+              <h4><a href="https://github.com/swamptemp/swamptemp.github.io/tree/master/data">Data</a></h4>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
