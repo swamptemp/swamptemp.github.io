@@ -22,7 +22,7 @@ g <- ggplot(plot.df, aes(dt, temp)) + geom_line(aes(color = variable)) +
         legend.text = element_text(family = "Roboto", size = 22),
         legend.position = "bottom", legend.title = element_blank())
 
-png(filename = "/home/pi/swamptemp.github.io/history.png",
+png(filename = "/home/pi/swamptemp.github.io/images/history.png",
     height = 400, width = 800)
 plot(g)
 dev.off()
@@ -39,7 +39,7 @@ g <- ggplot(plot.df, aes(dt, humidity)) + geom_line(aes(color = variable)) +
         axis.title = element_text(family = "Roboto", size = 16),
         legend.text = element_text(family = "Roboto", size = 22),
         legend.position = "bottom", legend.title = element_blank())
-png(filename = "/home/pi/swamptemp.github.io/humidity.png",
+png(filename = "/home/pi/swamptemp.github.io/images/humidity.png",
     height = 400, width = 800)
 plot(g)
 dev.off()
