@@ -1,1 +1,1 @@
-document.write("<h4>Inside Temperature: 19.32°C</h4><h4>Outside Temperature: 1.93°C</h4><h4>Fermenter 1 Temperature: 17.88°C</h4><h4>Fermenter 2 Temperature: 15.63°C</h4><h4>Inside Humidity: 19.76%</h4><h4>Outside Humidity: 92.0%</h4><br>Last update: 2018-04-16 03:51:11");
+document.write("<h4>Inside Temperature: 20.0°C</h4><h4>Outside Temperature: 2.12°C</h4><h4>Fermenter 1 Temperature: 17.94°C</h4><h4>Fermenter 2 Temperature: 15.81°C</h4><h4>Inside Humidity: 19.37%</h4><h4>Outside Humidity: 93.0%</h4><br>Last update: 2018-04-16 05:51:08");
