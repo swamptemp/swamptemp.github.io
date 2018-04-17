@@ -125,7 +125,7 @@ class swamptemp:
             with open ('/home/pi/swamptemp.github.io/state/fermenter', 'w') as f:
                 f.write(new_state)
             emails = {
-                'Christoph' : 'criostoir' + 'breathnach' + '@gmail.com',
+                'Christoph' : 'cbtw' + 'alsh' + '@' + 'uvt.nl',
                 'Roisin' : 'roisin' + 'donnellyireland' + '@gmail.com'
             }
             with open ('/home/pi/.config/.email', 'r') as f:
@@ -170,7 +170,7 @@ class swamptemp:
         if temps['temp'] > temps['o_temp'] + temp_diff and \
             temps['temp'] > desired_temp and window_state == 'closed':
             emails = {
-                'Christoph' : 'criostoir' + 'breathnach' + '@gmail.com',
+                'Christoph' : 'cbtw' + 'alsh' + '@' + 'uvt.nl',
                 'Roisin' : 'roisin' + 'donnellyireland' + '@gmail.com'
             }
             with open ('/home/pi/.config/.email', 'r') as f:
@@ -207,8 +207,8 @@ class swamptemp:
         if temps['temp'] < temps['o_temp'] - temp_diff and \
             temps['temp'] > desired_temp and window_state == "open":
             emails = {
-                'Christoph' : 'criostoir' + 'breathnach' + '@gmail.com',
-                'Roisin' : 'roisin' + 'donnellyireland' + '@gmail.com'
+                'Christoph' : 'cbtw' + 'alsh' + '@' + 'uvt.nl',
+                'Roisin' : 'roisin' + 'donnellyireland' + '@' + 'gmail.com'
             }
             with open ("/home/pi/.config/.email", "r") as f:
                 pswd = f.read().replace('\n', '')
